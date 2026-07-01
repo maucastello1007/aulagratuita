@@ -4627,5 +4627,18 @@ function AppV2() {
 ReactDOM.createRoot(document.getElementById("root")).render(/*#__PURE__*/React.createElement(AppV2, null));
 </script>
 
+<!-- WhatsApp Float Button -->
+<a href="https://wa.me/5515991014776" target="_blank" rel="noopener" id="wa-float" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.2-.7.2-.2.3-.7.8-.9 1-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.3-.5.1-.2 0-.4 0-.5 0-.1-.7-1.7-.9-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.3 5.2 4.6.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/><path d="M20.5 3.5C18.3 1.3 15.3 0 12.1 0 5.5 0 .2 5.4.2 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.7 1 3.7 1.4 5.7 1.4 6.6 0 12-5.4 12-12 0-3.2-1.2-6.2-3.4-8.3zM12.1 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4c-1-1.6-1.5-3.4-1.5-5.3 0-5.4 4.4-9.8 9.9-9.8 2.6 0 5.1 1 7 2.9s2.9 4.3 2.9 7c-.1 5.4-4.5 9.8-10 9.8z"/></svg>
+  <span class="wa-label">Alguma dúvida? Estamos online!</span>
+</a>
+<style>
+#wa-float{position:fixed;bottom:24px;right:24px;z-index:999;display:flex;align-items:center;gap:10px;background:#1FA855;color:#fff;padding:13px 18px 13px 14px;border-radius:999px;box-shadow:0 4px 0 #157A3C,0 12px 32px -8px rgba(31,168,85,.55);font-family:var(--font-sans,'Manrope',sans-serif);font-weight:700;font-size:14px;text-decoration:none;transition:transform .15s,box-shadow .15s;max-width:calc(100vw - 48px);}
+#wa-float:hover{transform:translateY(-3px);box-shadow:0 6px 0 #157A3C,0 18px 40px -8px rgba(31,168,85,.6);}
+#wa-float svg{width:24px;height:24px;flex-shrink:0;}
+.wa-label{white-space:nowrap;}
+@media(max-width:480px){#wa-float{padding:13px 16px 13px 14px;}.wa-label{display:none;}}
+</style>
+
 </body>
 </html>
